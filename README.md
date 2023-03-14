@@ -66,7 +66,8 @@ end
 ## Known Issues
 
 - If you add a window while swollen, it will be tiny when unswollen
-- Unswelling from a non-swollen window can occasionally lead to some windows not beign exactly like they were
+- Unswelling from a non-swollen window can occasionally lead to some windows not
+  beign exactly like they were
 
 ## Alternatives
 
@@ -74,17 +75,19 @@ end
 
 NeoZoom is a fantastic plugin that does something very similar to swell. However
 insead of changing window sizes, it "pops" them out into a float. I really like
-swell and, in fact, I still have it in my config mapped to `<leader>Z`.
+neozoom and, in fact, I still have it in my config mapped to `<leader>Z`.
 
 The one reason I chose to build swell is because the way I use neozoom, my
-status line is not visible, which means that if I want to "maximize" a window
-for anything that involves editing, I always feel like I'm not getting the most
-out of my config.
+status line is not visible because the neozoom float covers it, which means that
+if I want to "maximize" a window for anything that involves editing, I always
+feel like I'm not getting the most out of my config.
 
 [maximize.nvim](https://github.com/declancm/maximize.nvim)
 
 I tried maximize for a bit, but it doesnt work on some of the buffers I need it
 to work on like [nvim-spectre](https://github.com/nvim-pack/nvim-spectre) and
 [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui) so I did not try it for
-long. It might do exactly what you want it to though. Unlike swell, it doesnt
-"truly" maximizes the windows without any cluter from the non-swollen windows.
+long. It might do exactly what you want it to though. If the issues with
+maximize don't affect you, it does have one benefit over swell in that there
+won't be any clutter on the side of the maximized window from the ones that
+weren't swolen.
