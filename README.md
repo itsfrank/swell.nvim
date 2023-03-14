@@ -6,6 +6,8 @@ nvim-swell let's you maximize a window without losing your current layout. When
 you no longer want the window to be big, hit your swell keybind and your layout
 returns!
 
+https://user-images.githubusercontent.com/7297152/224915824-763f3bee-db63-4760-85bb-598e6ee6c52b.mp4
+
 ## Why?
 
 Ever typed `:h foo` but when it opened it was too small to read? Well now you
