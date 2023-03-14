@@ -15,13 +15,13 @@ M._config = {
 	swell_height = 1000000,
 }
 
-function M.is_swolen()
+function M.is_swollen()
 	return #M._window_memory ~= 0
 end
 
 function M.swell_window(window_handle)
-	if M.is_swolen() then
-		vim.notify("nvim-swell: a window is already swolen.", vim.log.levels.ERROR, { title = "nvim-swell" })
+	if M.is_swollen() then
+		vim.notify("nvim-swell: a window is already swollen.", vim.log.levels.ERROR, { title = "nvim-swell" })
 	end
 
 	local windows = vim.api.nvim_list_wins()
@@ -44,7 +44,7 @@ function M.unswell()
 end
 
 function M.toggle_current_window()
-	if M.is_swolen() then
+	if M.is_swollen() then
 		M.unswell()
 	else
 		local current_window = vim.api.nvim_get_current_win()

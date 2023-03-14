@@ -58,14 +58,14 @@ swell.toggle_current_window()
 local window_handle = -- get a window handle somehow
 swell.swell_window(window_handle)
 
-if swell.is_swolen() then
+if swell.is_swollen() then
     swell.unswell()
 end
 ```
 
 ## Known Issues
 
-- If you add a window while swolen, it will be tiny when unswollen
+- If you add a window while swollen, it will be tiny when unswollen
 - Unswelling from a non-swollen window can occasionally lead to some windows not beign exactly like they were
 
 ## Alternatives
@@ -87,4 +87,4 @@ I tried maximize for a bit, but it doesnt work on some of the buffers I need it
 to work on like [nvim-spectre](https://github.com/nvim-pack/nvim-spectre) and
 [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui) so I did not try it for
 long. It might do exactly what you want it to though. Unlike swell, it doesnt
-"truly" maximizes the windows without any cluter from the non-swolen windows.
+"truly" maximizes the windows without any cluter from the non-swollen windows.
