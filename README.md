@@ -61,6 +61,11 @@ if swell.is_swolen() then
 end
 ```
 
+## Known Issues
+
+- If you add a window while swolen, it will be tiny when unswollen
+- Unswelling from a non-swollen window can occasionally lead to some windows not beign exactly like they were
+
 ## Alternatives
 
 [NeoZoom.lua](https://github.com/nyngwang/NeoZoom.lua)

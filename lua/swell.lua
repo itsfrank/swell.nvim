@@ -35,8 +35,10 @@ end
 
 function M.unswell()
 	for _, window_info in ipairs(M._window_memory) do
-		vim.api.nvim_win_set_width(window_info.handle, window_info.width)
-		vim.api.nvim_win_set_height(window_info.handle, window_info.height)
+		if vim.api.nvim_win_is_valid(window_info.handle) then
+			vim.api.nvim_win_set_width(window_info.handle, window_info.width)
+			vim.api.nvim_win_set_height(window_info.handle, window_info.height)
+		end
 	end
 	M._window_memory = {}
 end
@@ -49,6 +51,5 @@ function M.toggle_current_window()
 		M.swell_window(current_window)
 	end
 end
-
 
 return M
