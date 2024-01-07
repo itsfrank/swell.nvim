@@ -1,8 +1,8 @@
-# nvim-swell
+# swell.nvim
 
 Make your windows **swole**, and then un-swell them, and then do it again!
 
-nvim-swell let's you maximize a window without losing your current layout. When
+swell.nvim let's you maximize a window without losing your current layout. When
 you no longer want the window to be big, hit your swell keybind and your layout
 returns!
 
@@ -24,13 +24,13 @@ return to my layout when I'm done.
 [lazy.nvim](https://github.com/folke/lazy.nvim)
 
 ```lua
-{ "itsFrank/nvim-swell" }
+{ "itsfrank/swell.nvim" }
 ```
 
 [packer.nvim](https://github.com/wbthomason/packer.nvim)
 
 ```lua
-use { "itsFrank/nvim-swell" }
+use { "itsfrank/swell.nvim" }
 ```
 
 ## Usage

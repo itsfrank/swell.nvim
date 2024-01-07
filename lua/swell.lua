@@ -21,7 +21,7 @@ end
 
 function M.swell_window(window_handle)
 	if M.is_swollen() then
-		vim.notify("nvim-swell: a window is already swollen.", vim.log.levels.ERROR, { title = "nvim-swell" })
+		vim.notify("swell.nvim: a window is already swollen.", vim.log.levels.ERROR, { title = "swell.nvim" })
 	end
 
 	local windows = vim.api.nvim_list_wins()
